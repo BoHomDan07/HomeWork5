@@ -1,0 +1,31 @@
+.box{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: green;
+    animation: animate1 4s infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translate(0px, 0px);
+        background-color: green;
+    }
+    25%{
+        transform: translate(0px, -200px);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(-200px, -200px);
+        background-color: red;
+    }
+    75%{
+        transform: translate(-200px, 0px);
+        background-color: blue;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        background-color: green;
+    }
+}
